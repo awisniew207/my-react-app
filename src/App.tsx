@@ -24,7 +24,7 @@ function App() {
           try {
             const vincent = new VincentSDK();
             await vincent.storeJWT(jwtParam);
-            const verifyJwt = await vincent.verifyJWT("http://localhost:5173/");
+            const verifyJwt = await vincent.verifyJWT(window.location.origin + '/');
             if (!verifyJwt) {
               throw new Error('Failed to verify JWT');
             }
