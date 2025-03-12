@@ -29,10 +29,41 @@ export default defineConfig({
           buffer: true
         })
       ]
-    }
+    },
+    include: [
+      'process/browser',
+      'buffer',
+      'util',
+      'stream-browserify',
+      'events',
+      'path-browserify',
+      'crypto-browserify'
+    ]
   },
   define: {
-    'process.env': {},
-    'global': {}
-  }
+    // Define process.env for both dev and prod
+    'process.env': JSON.stringify({}),
+    // Explicitly set global for production builds
+    'global': 'window',
+  },
+  build: {
+    // More verbose build output for debugging
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        // Don't drop console logs in production for debugging
+        drop_console: false,
+      },
+    },
+    // Make process available globally in the bundle
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
+    rollupOptions: {
+      // Make sure polyfills are included in the bundle
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 })
