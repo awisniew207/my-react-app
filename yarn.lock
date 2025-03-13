@@ -1396,10 +1396,10 @@
     siwe "^2.3.2"
     tslib "1.14.1"
 
-"@lit-protocol/vincent-sdk@^0.1.0-5":
-  version "0.1.0-5"
-  resolved "https://registry.npmjs.org/@lit-protocol/vincent-sdk/-/vincent-sdk-0.1.0-5.tgz"
-  integrity sha512-I2Kr/bVdvSR0JYmh1AFdG5KCH155hqSVhbogTww0vTHbVxIm9B4iHTLJCrp3XT1lmUmJ9awfV2O4A4n0imDbCg==
+"@lit-protocol/vincent-sdk@^0.1.0-6":
+  version "0.1.0-6"
+  resolved "https://registry.npmjs.org/@lit-protocol/vincent-sdk/-/vincent-sdk-0.1.0-6.tgz"
+  integrity sha512-oOggZZxUyA24EjHrUWoWXBA4Qs7F4KF8XO+iWT3FOgurhw6PZe+kCVt2uE6c0lMnA8wWtC+MN3B0pvyFk4YNdQ==
   dependencies:
     "@lit-protocol/lit-node-client" "^7.0.8"
     "@lit-protocol/pkp-ethers" "^7.0.8"

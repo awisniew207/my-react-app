@@ -21,6 +21,8 @@ function App() {
           try {
             const vincent = new VincentSDK();
             await vincent.storeJWT(jwtParam);
+            const decoded = await vincent.decodeJWT();
+            console.log("Decoded JWT:", decoded);
             const verifyJwt = await vincent.verifyJWT(window.location.origin + '/');
             if (!verifyJwt) {
               throw new Error('Failed to verify JWT');
