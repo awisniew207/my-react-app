@@ -47,7 +47,7 @@ function App() {
   }, []);
 
   const handleRedirect = () => {
-    window.location.href = "https://vincent-auth.vercel.app/";
+    window.location.href = "https://vincent-auth.vercel.app/?appId=12";
   }
 
   return (
