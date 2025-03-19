@@ -47,7 +47,7 @@ function App() {
   }, []);
 
   const handleRedirect = () => {
-    window.location.href = "https://vincent-n2scm0ygb-lit-protocol.vercel.app/consent?appId=3";
+    window.location.href = "https://vincent-5mv9nt656-lit-protocol.vercel.app/consent?appId=3";
   }
 
   
