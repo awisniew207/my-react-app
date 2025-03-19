@@ -50,6 +50,7 @@ function App() {
     window.location.href = "https://vincent-n2scm0ygb-lit-protocol.vercel.app/consent?appId=3";
   }
 
+  
   return (
     <div className="app-container">
       <header>
